@@ -1,0 +1,59 @@
+Answer the following questions:
+
+    - In the last 7 days, how many unique visitors were located in India? In the last 7 days, India has had 223 unique visitors.
+
+  
+  - In the last 24 hours, of the visitors from China, how many were using Mac OSX? In the last 24 hours, China has had 14 visitors using Mac OSX
+
+  
+  - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors? In the last two days, 93.939% of visitors received the 404 errors & 6.061 received the 503 errors.
+    
+
+- In the last 7 days, what country produced the majority of the traffic on the website?
+The country that produced the most traffic was China
+  
+  - Of the traffic that's coming from that country, what time of day has the highest amount of activity?
+	12pm is the time that has the highest amount within China
+   
+ - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
+	There are 5 different types of files downloaded. Gz, css, zip, deb, and rpm
+
+3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
+     - Locate the time frame in the last 7 days with the most amount of bytes (activity).
+     - In your own words, is there anything that seems potentially strange about this activity? The one thing I’ve noticed about the chart is that the timeframe with the most amount of bytes(activity) has only 3 unique visitors.
+
+4. Filter the data by this event.
+     - What is the timestamp for this event?
+The timestamp is 06/20/2021 - 06/21/2021
+     - What kind of file was downloaded?
+	Two files were downloaded, a rmp and a zip.
+     - From what country did this activity originate?
+	This originated in the United States
+     - What HTTP response codes were encountered by this visitor?
+	The only HTTP code was 200
+
+5. Switch to the Kibana Discover page to see more details about this activity.
+     - What is the source IP address of this activity?
+	23.24.09.240
+ 
+    - What are the geo coordinates of this activity?
+	{ "lat": 37.85008167, "lon": -83.84575194 }
+ 
+    - What OS was the source machine running?
+	OSX
+    
+ - What is the full URL that was accessed?
+	https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.3.2-i686.rpm 
+     
+- From what website did the visitor's traffic originate?
+	www.elastic.co
+
+6. Finish your investigation with a short overview of your insights. 
+
+     - What do you think the user was doing?
+	The user was just trying to download some files for metricbeat
+     - Was the file they downloaded malicious? If not, what is the file used for?
+	No, I do not believe the files were malicious. The user was downloading metricbeat to possible periodically collect metrics from the operating system and from services running on the serve
+     - Is there anything that seems suspicious about this activity?
+     - Is any of the traffic you inspected potentially outside of compliance guidelines? 
+No, I believe the user legit downloaded a few files for whatever purpose was needed with no malicious intent.
